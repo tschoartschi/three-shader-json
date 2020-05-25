@@ -1,0 +1,32 @@
+{
+    "name": "three-shader-json",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "node node_modules/.bin/rollup -c && node node_modules/.bin/http-server -c-1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tschoartschi/three-shader-json.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tschoartschi/three-shader-json/issues"
+    },
+    "homepage": "https://github.com/tschoartschi/three-shader-json#readme",
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^8.0.0",
+        "fs-extra": "^9.0.0",
+        "http-server": "^0.12.3",
+        "rollup": "^2.10.9",
+        "rollup-plugin-terser": "^6.1.0",
+        "rollup-plugin-visualizer": "^4.0.4",
+        "three": "^0.116.1"
+    },
+    "dependencies": {
+        "rollup-plugin-analyzer": "^3.2.3"
+    }
+}

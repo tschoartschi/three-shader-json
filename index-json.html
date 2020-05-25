@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test the tree shaked three.js build</title>
+    <link rel="prefetch" href="dist/shaders.json">
+</head>
+<body>
+    <script>
+        (async function(){
+            const response = await fetch('dist/shaders.json');
+            const json = await response.json();
+            window._rsl = json;
+            const script = document.createElement('script');
+            script.src = 'dist/bundle-json.js';
+            document.body.appendChild(script);
+        }());
+    </script>
+</body>
+</html>
